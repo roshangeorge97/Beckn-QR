@@ -20,7 +20,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag rishaw00/node-app:${{ github.sha }}
+      run: docker build . --file Dockerfile --tag roshangeorge97/beckn_qr:${{ github.sha }}
       
     - name: Docker Push
       run: docker push roshangeorge97/beckn_qr:${{ github.sha }}
